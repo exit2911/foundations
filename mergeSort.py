@@ -2,7 +2,8 @@
 
 def mergeSort(arr):
     
-    if len(arr) > 1:
+    if len(arr) > 1: #need this if statement because the halving should stop after
+    #L & R get too small
     
         m = len(arr)//2 #middle index
         L = arr[:m]
