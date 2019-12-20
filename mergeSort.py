@@ -3,7 +3,7 @@
 def mergeSort(arr):
     
     if len(arr) > 1: #need this if statement because the halving should stop after
-    #L & R get too small
+    #L & R get too small. to not halve empty arrays forever
     
         m = len(arr)//2 #middle index
         L = arr[:m]
@@ -11,6 +11,9 @@ def mergeSort(arr):
         
         mergeSort(L)
         mergeSort(R)
+        
+        print("L",L)
+        print("R",R)
         
         l = r = k = 0
         
