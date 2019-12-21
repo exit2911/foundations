@@ -25,10 +25,3 @@ array = [1,5,7,3,8]
 result = quicksort(array)
 
 print(result)
-
-
-from timeit import Timer
-
-t = Timer("quicksort(array)")
-
-print(t)
