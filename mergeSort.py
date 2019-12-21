@@ -12,9 +12,6 @@ def mergeSort(arr):
         mergeSort(L)
         mergeSort(R)
         
-        print("L",L)
-        print("R",R)
-        
         l = r = k = 0
         
         while l < len(L) and r < len(R):
@@ -27,7 +24,7 @@ def mergeSort(arr):
                 arr[k] = R[r]
                 r += 1
             k += 1
-                
+              
         while l < len(L):
             
             arr[k] = L[l]
@@ -38,10 +35,12 @@ def mergeSort(arr):
             arr[k] = R[r]
             r += 1
             k += 1
-                
+            
+        print(arr)
         
 arr = [2,5,3,1,3]
 
 mergeSort(arr)
 
 print(arr)
+
